@@ -1,0 +1,390 @@
+body {
+    margin: 0;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Nav */
+.nav {
+    width: 100%;
+    max-width: 1080px;
+
+    margin: 65px auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #000;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 580px;
+    width: 100%;
+}
+
+.nav__item {  
+    font-weight: 400;
+    color: #626262;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav__item:hover {
+    text-decoration-color: #626262;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Main image */
+.main__image {
+    margin: 0 auto 100px;
+    max-width: 1060px;
+}
+
+.main__img {
+    width: 100%;
+    height: auto;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 900px;
+
+    margin: auto;
+}
+
+/* Photodiary */
+.photodiary {
+    margin-bottom: 30px;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #b4ad9e;
+    text-transform: uppercase;
+}
+
+.photodiary__title {
+    margin-bottom: 40px;
+
+    font-size: 30px;
+    color: #626262;
+    font-weight: 400;
+}
+
+.photodiary__text {
+    margin-bottom: 55px;
+
+    color: #626262;
+    font-weight: 400;
+}
+
+.photodiary__comment {
+    display: block;
+    margin-bottom: 130px;
+
+    text-decoration: none;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: #b4ad9e;
+    text-transform: uppercase;
+}
+
+.photodiary__comment:hover {
+    text-decoration: underline;
+    text-decoration-color: inherit;
+}
+
+/* Cards */
+.cards__container {
+    width: 100%;
+    max-width: 900px;
+
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 46%;
+
+    margin-bottom: 120px;
+}
+
+.card__img {
+    margin-bottom: 30px;
+
+    width: 100%;
+    height: auto;
+}
+
+.card__suptitle {
+    margin-bottom: 25px;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #b4ad9e;
+    text-transform: uppercase;
+}
+
+.card__title {
+    margin-bottom: 40px;
+
+    font-size: 30px;
+    color: #626262;
+    font-weight: 400;
+}
+
+.card__text {
+    color: #626262;
+    font-weight: 400;
+}
+
+/* Form */
+.get__email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #f0f0f0;
+
+    padding: 70px 0;
+    margin-bottom: 100px;
+}
+
+.get__email__title {
+    margin-bottom: 70px;
+
+    font-size: 30px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.get__email__container {
+    width: 400px;
+
+    position: relative;
+}
+
+.get__email__input {
+    padding: 10px 8px;
+
+    width: 400px;
+
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #626262;
+    background-color: #f0f0f0;
+
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.email__send {
+    position: absolute;
+    top: 30%;
+    right: 5px;
+}
+
+/* Button */
+.container__button {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 120px;
+}
+
+.button {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #626262;
+
+    padding: 10px 30px;
+   
+    background-color: #fff;
+
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    color: #626262;
+
+    text-decoration: none;
+}
+
+.button:hover {
+    text-decoration: underline;
+    text-decoration-color: inherit;
+}
+
+/* Footer */
+.footer {
+    background-color: #f0f0f0;
+}
+
+.footer__container {
+    margin: auto;
+
+    width: 100%;
+    max-width: 990px;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 40px 0;
+}
+
+.footer__details {
+    display: flex;
+}
+
+.footer__details__item {
+    color: #000;
+}
+
+.footer__details__item:first-child {
+    margin-right: 15px;
+}
+
+.footer__details__item:hover {
+    text-decoration: underline;
+    text-decoration-color: inherit;
+}
+
+.footer__social__media {
+    display: flex;
+}
+
+.footer__icon {
+    margin-left: 20px;
+
+    height: 17px;
+}
+
+@media (max-width: 1080px) {
+    /* Nav */
+    .nav {
+        padding: 0 15px;
+    }
+
+    /* Main image */
+    .main__image {
+        margin-bottom: 20px;
+    }
+
+    /* Container */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Photodiary */
+    .photodiary {
+        margin-bottom: 10px;
+    }
+
+    .photodiary__title {
+        margin-bottom: 20px;
+    }
+
+    .photodiary__text {
+        margin-bottom: 20px;
+    }
+
+    .photodiary__comment {
+        margin-bottom: 30px;
+    }
+
+    /* Card */
+    .cards__container {
+        padding: 0 15px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .card__img {
+        margin-bottom: 10px;
+    }
+
+    .card__suptitle {
+        margin-bottom: 0px;
+    }
+
+    .card__title {
+        margin-bottom: 10px;
+    }
+
+    /* Button */
+    .container__button {
+        margin-bottom: 40px;
+    }
+
+    /* Footer */
+    .footer__container {
+        padding: 40px 15px;
+    }
+} 
+
+@media (max-width: 760px) {
+    /* Nav */
+    .nav__container {
+        display: none;
+    }
+
+    /* Card */
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 580px) {
+    /* Get__email */
+    .get__email {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
